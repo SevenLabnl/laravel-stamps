@@ -1,15 +1,15 @@
 {
-    "name": "sevenlab/stamps",
+    "name": "7lab/laravel-stamps",
     "description": "Adds userstamps to models and migrations and handles it automatically",
     "license": "license",
     "authors": [
         {
-            "name": "SevenLab",
+            "name": "7Lab",
             "email": "info@7lab.nl",
             "homepage": "https://7lab.nl"
         }
     ],
-    "homepage": "https://github.com/sevenlab/stamps",
+    "homepage": "https://github.com/7Lab/laravel-stamps",
     "keywords": [
         "Laravel",
         "Stamps",
