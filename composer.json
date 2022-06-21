@@ -16,7 +16,7 @@
         "Userstamps"
     ],
     "require": {
-        "illuminate/support": "~7|~8"
+        "illuminate/support": "~7|~8|~9"
     },
     "require-dev": {
         "phpunit/phpunit": "~9.0",
@@ -35,7 +35,7 @@
     "extra": {
         "laravel": {
             "providers": [
-              "StampsServiceProvider"
+                "SevenLab\\Stamps\\StampsServiceProvider"
             ],
             "aliases": {
                 "Stamps": "SevenLab\\Stamps\\Facades\\Stamps"
