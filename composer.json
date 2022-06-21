@@ -35,7 +35,7 @@
     "extra": {
         "laravel": {
             "providers": [
-              "StampsServiceProvider"
+                "SevenLab\\Stamps\\StampsServiceProvider"
             ],
             "aliases": {
                 "Stamps": "SevenLab\\Stamps\\Facades\\Stamps"
