@@ -3,6 +3,7 @@
 namespace SevenLab\Stamps;
 
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 trait LabStamps
 {
@@ -41,7 +42,7 @@ trait LabStamps
     /**
      * Get the user that created the model.
      */
-    public function creator()
+    public function creator(): BelongsTo
     {
         return $this->belongsTo($this->getUserClass(), $this->getCreatedByColumn());
     }
@@ -69,7 +70,7 @@ trait LabStamps
     /**
      * Get the user that edited the model.
      */
-    public function updater()
+    public function updater(): BelongsTo
     {
         return $this->belongsTo($this->getUserClass(), $this->getUpdatedByColumn());
     }
@@ -87,7 +88,7 @@ trait LabStamps
     /**
      * Get the user that deleted the model.
      */
-    public function deleter()
+    public function deleter(): BelongsTo
     {
         return $this->belongsTo($this->getUserClass(), $this->getDeletedByColumn());
     }
